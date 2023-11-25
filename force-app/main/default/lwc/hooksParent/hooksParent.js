@@ -6,6 +6,7 @@ export default class HooksParent extends LightningElement {
     changeName(){
         this.name = "Salesforce"+ Math.random()
     }
+   
 
     renderedCallback() {
         
@@ -41,7 +42,7 @@ export default class HooksParent extends LightningElement {
     disconnectedCallback() {
         console.log('Demo Parent DisconnectedCallback called');
     }
-
+*/
     errorCallback(error, stack) {
         console.log('Demo Parent errorCallback called', error.message);
     }
@@ -49,6 +50,6 @@ export default class HooksParent extends LightningElement {
     show = true
     toggle(){
         this.show = !this.show
-    }*/
+    }
 
 }

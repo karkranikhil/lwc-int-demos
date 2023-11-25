@@ -15,14 +15,23 @@ export default class HooksChild extends LightningElement {
 
     connectedCallback() {
         console.log('Demo Child ConnectedCallback called');
+        //window.addEventListener('click', this.clickHandler)
         throw new Error('Parameter is not a number!')
     }
-    renderedCallback(){
-        console.log('Demo Child renderedCallback called');
-    }
+    // clickHandler=()=>{
+    //     let color = Math.floor(Math.random()*16777215).toString(16)
+    //     this.template.querySelector('div').style.backgroundColor='#'+color
+    //     console.log("clickHandler called")
+    // }
+   
 
     disconnectedCallback() {
         console.log('Demo Child DisconnectedCallback called');
+        window.removeEventListener('click', this.clickHandler)
+    }
+
+    renderedCallback(){
+        console.log('Demo Child renderedCallback called');
     }
 
     errorCallback(error, stack) {

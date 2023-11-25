@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Lifecycle Hooks Sequences">
+        <div class="bg-grey slds-p-bottom_medium">
+            <h1>I am parent component</h1>
+        </div>
+        <button onclick={toggle}>Remove Child</button>
+        <template lwc:if={show}>
+            <c-child-hook-sequence></c-child-hook-sequence>
+        </template>
+        
+    </lightning-card>
+</template>
