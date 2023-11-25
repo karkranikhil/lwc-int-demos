@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="new directive">
+        <template lwc:if={isGenZ}>I am Gen Z</template>
+        <template lwc:elseif={isMillennials}>I am Millennials</template>
+        <template lwc:else>I am Other</template>
+    </lightning-card>
+
+    <lightning-card title="Old Directive">
+        <template if:true={isGenZ1}>I am Gen Z</template>
+        <template if:true={isMillennials1}>I am Millennials</template>
+        <template if:true={otherAge1}>I am Other</template>
+    </lightning-card>
+</template>

@@ -1,0 +1,14 @@
+<template>
+
+    <lightning-card title="Parent to child method communication">
+        <c-child-component></c-child-component>
+
+        <lightning-button label="Fetch User Info" onclick={clickHandler}></lightning-button>
+
+        <template lwc:if={fetchedInfo}>
+            <div>Name  - {fetchedInfo.name}</div>
+            <div>Age  - {fetchedInfo.age}</div>
+        </template>
+    </lightning-card>
+    
+</template>
