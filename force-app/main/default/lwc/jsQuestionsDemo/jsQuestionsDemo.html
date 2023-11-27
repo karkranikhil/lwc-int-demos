@@ -1,0 +1,48 @@
+<template>
+    <lightning-card title="event.preventDefault vs event.stopPropagation demo">
+        <div class="slds-p-around_medium">
+           <a href="https://www.salesforcetroop.com/" onclick={handleLinkClick}>Click me</a>
+
+           <div onclick={handleDivClick}>
+                <button onclick={handleButtonClick}>Click me</button>
+            </div>
+
+        </div>
+    </lightning-card>
+
+
+
+
+
+
+
+<!-- <lightning-card title="data-attribute demo">
+    <ul class="slds-p-around_medium">
+        <template for:each={dataAttrList} for:item="car">
+            <li class="slds-box" data-record-id={car.Id} key={car.Id} onclick={attrHandler}>{car.Name}</li>
+        </template>
+    </ul>
+</lightning-card> -->
+
+
+
+
+
+
+    <!-- <lightning-card title="event.target vs event.currentTarget">
+        <ul class="slds-p-around_medium" id="ul" onclick={clickhandler}>
+            <li class="slds-box" id="li1"><strong>Hello</strong> Javascript</li>
+            <li class="slds-box" id="li2">Hello Lwc</li>
+            <li class="slds-box" id="li3">Hello salesforce</li>
+            
+        </ul>
+    </lightning-card> -->
+
+
+    <!-- <lightning-card title="JS Demo">
+        <div class="slds-p-around_medium">
+            <p>Hello Javascript</p>
+            <button lwc:ref="actionButton">Click me</button>
+        </div>
+    </lightning-card> -->
+</template>
